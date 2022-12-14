@@ -1,14 +1,14 @@
 
 # Go down this list step by step. 
 
-# Go into display configuration, choose a suitable resolution, and reboot.
-
-sudo pacman -S gvim
+Open display configuration, choose a suitable resolution, and reboot.
 
 # For bigger terminal font-size:
 sudo chmod 770 /usr/share/konsole
 # Right click terminal window, click Appearance, Choose, and pick your font-size. 
 
+sudo pacman -S gvim
+ 
 # Install linux headers:
 # Find your header version
 uname -r
@@ -26,3 +26,21 @@ sudo pacman -Syyu
  
 # Install gimp photo editor:
 sudo -S gimp
+
+# Install git
+sudo pacman -S git
+
+# Install chrome 
+sudo git clone https://aur.archlinux.org/google-chrome.git
+sudo chmod 777 google-chrome
+cd google-chrome
+makepkg -s 
+rename the long and dizzying .zst file to chrome.zst
+sudo pacman -U chrome.zst
+# Launch google chrome from terminal
+google-chrome-stable
+
+
+
+# TunnelBear
+Add TunnelBear extension on chrome.
