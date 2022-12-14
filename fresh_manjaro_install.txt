@@ -1,0 +1,28 @@
+
+# Go down this list step by step. 
+
+# Go into display configuration, choose a suitable resolution, and reboot.
+
+sudo pacman -S gvim
+
+# For bigger terminal font-size:
+sudo chmod 770 /usr/share/konsole
+# Right click terminal window, click Appearance, Choose, and pick your font-size. 
+
+# Install linux headers:
+# Find your header version
+uname -r
+# Choose header that matches your result from uname -r command
+sudo pacman -S linux-headers 
+
+# Gaming related, unlock your language:
+sudo vim /etc/locale.gen
+# uncomment en.utf-8
+sudo locale-gen
+
+# Update system: 
+sudo pacman -Syyu
+# Save this for last because it takes forever!
+ 
+# Install gimp photo editor:
+sudo -S gimp
