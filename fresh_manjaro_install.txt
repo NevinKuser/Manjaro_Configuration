@@ -5,7 +5,10 @@ Open display configuration, choose a suitable resolution, and reboot.
 
 # For bigger terminal font-size:
 sudo chmod 770 /usr/share/konsole
-# Right click terminal window, click Appearance, Choose, and pick your font-size. 
+# Right click terminal window, edit current profile, Appearance, Choose, and pick your font-size. 
+
+#For dark window title bar
+Search window decorations in manjaro search bar, click "Colors", and choose "Breeze Dark"
 
 sudo pacman -S gvim
  
