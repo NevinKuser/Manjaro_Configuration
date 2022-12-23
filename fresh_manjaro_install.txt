@@ -22,10 +22,6 @@ sudo pacman -S linux-headers
 sudo vim /etc/locale.gen
 # uncomment en.utf-8
 sudo locale-gen
-
-# Update system: 
-sudo pacman -Syyu
-# Save this for last because it takes forever!
  
 # Install gimp photo editor:
 sudo -S gimp
@@ -47,7 +43,16 @@ google-chrome-stable
 sudo pacman -S snapd
 sudo systemctl enable --now snapd.socket
 sudo ln -s /var/lib/snapd/snap /snap
+#REBOOT NOW!!!
 sudo snap install code --classic
+sudo pacman -S gnome-keyring
+
+Set your username: git config --global user.name "FIRST_NAME LAST_NAME"
+Set your email address: git config --global user.email "MY_NAME@example.com"
 
 # TunnelBear
 Add TunnelBear extension on chrome.
+
+# Update system: 
+sudo pacman -Syyu
+# Save this for last because it takes forever!
