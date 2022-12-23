@@ -40,7 +40,11 @@ sudo pacman -U chrome.zst
 # Launch google chrome from terminal
 google-chrome-stable
 
-
+# Install visual studio code
+sudo pacman -S snapd
+sudo systemctl enable --now snapd.socket
+sudo ln -s /var/lib/snapd/snap /snap
+sudo snap install code --classic
 
 # TunnelBear
 Add TunnelBear extension on chrome.
