@@ -50,6 +50,9 @@ sudo pacman -S gnome-keyring
 Set your username: git config --global user.name "FIRST_NAME LAST_NAME"
 Set your email address: git config --global user.email "MY_NAME@example.com"
 
+#Install Node.js
+To install node, simply use the following command: sudo snap install node --classic
+
 # TunnelBear
 Add TunnelBear extension on chrome.
 
