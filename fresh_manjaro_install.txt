@@ -31,6 +31,8 @@ sudo pacman -S git
 
 # Install Java
 git clone https://aur.archlinux.org/jdk.git
+cd jdk
+makepkg -si
 
 # Install chrome 
 sudo git clone https://aur.archlinux.org/google-chrome.git
