@@ -29,6 +29,9 @@ sudo -S gimp
 # Install git
 sudo pacman -S git
 
+# Install Java
+git clone https://aur.archlinux.org/jdk.git
+
 # Install chrome 
 sudo git clone https://aur.archlinux.org/google-chrome.git
 sudo chmod 777 google-chrome
