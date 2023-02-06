@@ -3,6 +3,9 @@
 
 Open display configuration, choose a suitable resolution, and reboot.
 
+#Set date and time:
+timedatectl set-time '2023-02-06 10:46:03'
+
 # For bigger terminal font-size:
 sudo chmod 770 /usr/share/konsole
 # Right click terminal window, edit current profile, Appearance, Choose, and pick your font-size. 
