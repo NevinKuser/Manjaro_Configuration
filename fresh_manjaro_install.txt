@@ -1,5 +1,6 @@
 
-# Go down this list step by step. 
+#WhatsApp:
+sudo snap install whatsapp-linux-desktop
 
 Open display configuration, choose a suitable resolution, and reboot.
 
