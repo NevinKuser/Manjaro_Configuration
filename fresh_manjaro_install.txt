@@ -21,25 +21,15 @@ uname -r
 # Choose header that matches your result from uname -r command
 sudo pacman -S linux-headers 
 
-# Gaming related, unlock your language:
-sudo vim /etc/locale.gen
-# uncomment en.utf-8
-sudo locale-gen
- 
-# Install gimp photo editor:
-sudo -S gimp
-
-# Install git
-sudo pacman -S git
-
 # Install Java
 git clone https://aur.archlinux.org/jdk.git
 cd jdk
 makepkg -si
 
 # Install chrome 
+sudo pacman -S fakeroot
 sudo git clone https://aur.archlinux.org/google-chrome.git
-sudo chmod 777 google-chrome
+sudo chmod u+w google-chrome
 cd google-chrome
 makepkg -s 
 rename the long and dizzying .zst file to chrome.zst
@@ -62,7 +52,6 @@ Set your email address: git config --global user.email "MY_NAME@example.com"
 To install node, simply use the following command: sudo snap install node --classic
 
 # TunnelBear
-Add TunnelBear extension on chrome.
 
 # Update system: 
 sudo pacman -Syyu
